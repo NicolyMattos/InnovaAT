@@ -1,24 +1,16 @@
-import { useState } from 'react'
-import React from 'react'
-import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { BrowserRouter, Routes, Route, Navigate, Form } from 'react-router-dom'
-import Navbar from './Components/Navbar'
-import Home from './Pages/Home/Home'
+import "./App.css"
 
-function App() {
-  const [count, setCount] = useState(0)
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { onAuthStateChanged } from "firebase/auth"
 
-  return (
-    <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
-    </Router>
-  )
-}
+// hooks
 
-export default App
+import { useState, useEffect } from "react"
+import { useAuthentication } from "./Hooks/useAuthentication"
+
+// pages 
+import Home from "./Pages/Home/Home"
+
+// components
+import Navbar from "./Components/Navbar"
+import Footer from "./Components/Footer"
