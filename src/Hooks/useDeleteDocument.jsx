@@ -1,5 +1,5 @@
 import { useState, useEffect, useReducer } from "react";
-import { db } from "../firebase/config";
+import { db } from "../Firebase/config";
 import { doc, deleteDoc } from "firebase/firestore";
 
 const initialState = {
@@ -11,7 +11,7 @@ const deleteReducer = (state, action) => {
   switch (action.type) {
     case "LOADING":
       return { loading: true, error: null };
-    case "DELEC_DOC":
+    case "DELETED_DOC":
       return { loading: false, error: null };
     case "ERROR":
       return { loading: false, error: action.payload };
@@ -36,7 +36,7 @@ export const useDeleteDocument = (docCollection) => {
     checkCancelBeforeDispatch({ type: "LOADING"});
 
     try {
-      const deletedDocument = await deleteDocument(doc(db, docCollection, id));
+      const deletedDocument = await deleteDoc(doc(db, docCollection, id));
 
       checkCancelBeforeDispatch({
         type: "DELETED_DOC",

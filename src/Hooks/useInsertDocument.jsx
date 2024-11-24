@@ -1,8 +1,8 @@
-import { useState, useEffect, useReducer } from 'recat'
-import { db } from '../firebase/config'
+import { useState, useEffect, useReducer } from 'react'
+import { db } from '../Firebase/config'
 import { collection, addDoc, Timestamp } from 'firebase/firestore'
 
-const initializeState = {
+const initialState = {
     loading: null,
     error: null
 }
@@ -17,7 +17,6 @@ const insertReducer = (state, action) => {
             return {loading: false, error: action.payload}
         default:
             return state
-
     }
 }
 
@@ -51,5 +50,14 @@ export const useInsertDocument = (docCollection) => {
                  payload: error.message
              })
         }
+    }
+
+    useEffect(() => {
+        return () => setCancelled(true)
+    },[])
+
+    return{
+        insertDocument,
+        response
     }
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { db } from "../firebase/config";
+import { db } from "../Firebase/config";
 import {
   collection,
   query,
@@ -31,11 +31,17 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) =>{
         if (search) {
           q = await query(
             collectionRef,
+            where("tags", "array-contains", search),
+            orderBy("createdAt", "desc")
+          );
+        } else if (uid) {
+          q = await query(
+            collectionRef,
             where("uid", "==", uid),
-            orderBy("createAt", "desc")
+            orderBy("createdAt", "desc")
           );
         } else {
-          q = await query(collectionRef, orderBy("createAt", "desc"));
+          q = await query(collectionRef, orderBy("createdAt", "desc"));
         }
 
         await onSnapshot(q, (querySnapshot) => {

@@ -1,8 +1,8 @@
 import { useState, useEffect, useReducer } from "react";
-import { db } from "../firebase/config";
+import { db } from "../Firebase/config";
 import { updateDoc, doc } from "firebase/Firestore";
 
-const initializeState = {
+const initialState = {
     loading: null,
     error: null,
 };
@@ -40,13 +40,13 @@ export const useUpdateDocument = (docCollection) => {
 
       console.log(docRef);
 
-      const updateDocument = await updateDoc(docRef, data);
+      const updatedDocument = await updateDoc(docRef, data);
 
       console.log(updateDocument);
 
       checkCancelBeforeDispatch({
         type: "UPDATE_DOC",
-        payload: updateDocument,
+        payload: updatedDocument,
       });
     } catch (error) {
       console.log(error);
