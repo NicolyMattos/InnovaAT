@@ -16,6 +16,8 @@ import Reviews from "./Pages/Reviews/Reviews"
 // components
 import NavBar from "./Components/NavBar"
 import Footer from "./Components/Footer"
+import CadastroModal from "./Components/CadastroModal"
+import LoginModal from "./Components/LoginModal"
 
 // context
 import { AuthProvider } from "./Context/AuthContext"
@@ -46,6 +48,8 @@ function App() {
               <Route path='/Reviews' element={<Reviews />}></Route>
               <Route path='/SobreNos' element={<SobreNos />}></Route>
               <Route path='/FaleConosco' element={<FaleConosco />}></Route>
+              <Route path='/CadastroModal' element={<CadastroModal />}></Route>
+              <Route path='/LoginModal' element={<LoginModal />}></Route>
             </Routes>
           </div>
           <Footer />

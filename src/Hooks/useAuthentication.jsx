@@ -39,15 +39,16 @@ export const useAuthentication = () => {
             setLoading (false)
 
             return user
+
         }catch(error){
             console.error(error.message)
             console.table(typeof error.message)
 
             let systemErrorMessage
 
-            if(error.message.include('Password')){
+            if(error.message.includes('Password')){
                 systemErrorMessage = "A senha precisa conter ao menos 6 caracteres."
-            }else if(error.message.include('email-already')){
+            }else if(error.message.includes('email-already')){
                 systemErrorMessage = "E-mail já cadastro em nosso sistema"
             }else{
                 systemErrorMessage = "Ocorreu um erro, tente novamente mais tarde"
@@ -77,9 +78,9 @@ export const useAuthentication = () => {
 
             let systemErrorMessage
 
-            if(error.message.include('invalid-login-credentials')){
+            if(error.message.includes('invalid-login-credentials')){
                 systemErrorMessage = "Este usuário não tem registro em nossos sistemas"
-            }else if(error.message.include('wrong-password')){
+            }else if(error.message.includes('wrong-password')){
                 systemErrorMessage = "Existe algum erro em suas credenciais de login"
             }else{
                 systemErrorMessage = "Ocorreu um erro, tente novamente mais tarde."
