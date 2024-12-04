@@ -26,3 +26,18 @@ body,html {
   left: 300px;
 
 }
+
+.Podium {
+
+  position: absolute;
+  top: 1200px ;
+  z-index: 1;
+  left: 150px;
+
+}
+
+
+
+
+
+

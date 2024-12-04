@@ -3,9 +3,11 @@ import styles from './Reviews.module.css'
 
 const Reviews = () => {
   return (
-    <div>
-        <h1>Página de Reviews</h1>
+    <>
+    <div className={styles.texto}>
+        <h1>Página e reviews</h1>
     </div>
+    </>
   )
 }
 

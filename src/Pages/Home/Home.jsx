@@ -12,7 +12,7 @@ const Home = () => {
     <img src='/Explicacao.svg' alt='Explição sobre o site' className={styles.explicacao} />
     </div>
     <div>
-
+    <img src='/Podium.svg' alt='Podium' className={styles.Podium} />
     </div>
     </>
   )
