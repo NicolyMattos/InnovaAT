@@ -54,6 +54,7 @@ const CadastroModal = ({ isOpen, onClose, openLogin}) => {
     if (!isOpen) return null;
 
     return (
+        <>
         <div className={styles.modalOverlay} onClick={handleOverlayClick}>
             <div className={styles.modal}>
                 <button className={styles.CloseButton} onClick={onClose}>
@@ -113,6 +114,7 @@ const CadastroModal = ({ isOpen, onClose, openLogin}) => {
                 </footer>
             </div>
         </div>
+        </>
     )
 }
 

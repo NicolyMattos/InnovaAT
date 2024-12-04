@@ -1,16 +1,20 @@
 import React from 'react'
-import Podium from './Podium.svg'
-import Drone from './Drone.svg'
 import styles from './Home.module.css'
 
 const Home = () => {
   return (
-    <div className={styles.home}>
-        
-        <img src={Drone} alt='drone' className='drone' />
-        
-        <img src={Podium} alt='Podium' className='podium' />
+    <>
+    <div className={styles.Cabecalho}>
+        <img src='/Drone.svg' alt='drone' className={styles.Drone} />
+        <img src='/Review.svg' alt='review' className={styles.Review} />
     </div>
+    <div>
+    <img src='/Explicacao.svg' alt='Explição sobre o site' className={styles.explicacao} />
+    </div>
+    <div>
+
+    </div>
+    </>
   )
 }
 

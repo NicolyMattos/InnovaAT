@@ -63,7 +63,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink to="/FaleConosco">
-                Fale Conosco
+                Fale  Conosco
               </NavLink>
             </li>
           {/* ↓ Se o usuário não estiver logado */}

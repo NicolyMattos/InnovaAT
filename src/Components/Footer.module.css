@@ -1,0 +1,29 @@
+.footer {
+    width: 100vw;
+    padding: 20px 20px;
+    background-color: #2F592E;
+    color:#C3F98F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    top: 2000px;
+    left: 0px;
+
+  
+  }
+
+  ul  {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+  }
+
+  h1 {
+    color: #C3F98F;
+  }
+  
+  

@@ -1,19 +1,28 @@
-.home {
-    background-image: url('./fundoHome.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  
-  .podium {
-  margin-left: 10%;
+body,html {
+  background: url('/Degrade.svg') no-repeat top center;
+ 
+}
 
-  
-  }
-  
-  .drone {
-    align-items: left;
-    margin-top: 20vh;
-    margin-left: 9vw;
-    width: 80%;
-  }
-  
+.Drone {
+  position: absolute;
+  z-index: 1;
+  top: 3.5%;
+  right: 50%;
+
+}
+
+.Review {
+  position: absolute;
+  z-index: 1;
+  max-width: 400px;
+  top: 13%;
+  right: 15%;
+}
+
+.explicacao {
+  position: absolute;
+  top: 500px ;
+  z-index: 1;
+  left: 300px;
+
+}
