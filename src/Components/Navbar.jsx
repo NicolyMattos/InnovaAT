@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useAuthentication } from "../Hooks/useAuthentication";
 import { useAuthValue } from "../Context/AuthContext";
 import React, { useState } from 'react';
-import styles from './NavBar.module.css';
+import styles from './Navbar.module.css';
 import Logo from './Logo.svg';
 import LoginModal from "./LoginModal";
 import CadastroModal from "./CadastroModal";
