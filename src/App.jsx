@@ -16,7 +16,7 @@ import FaleConosco from "./Pages/FaleConosco/FaleConosco"
 import Reviews from "./Pages/Reviews/Reviews"
 
 // components
-import NavBar from "./Components/NavBar"
+import NavBar from "./Components/Navbar"
 import Footer from "./Components/Footer"
 import CadastroModal from "./Components/CadastroModal"
 import LoginModal from "./Components/LoginModal"
