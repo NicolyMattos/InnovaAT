@@ -1,0 +1,104 @@
+.Cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    z-index: 1; 
+}
+
+.Tittle {
+    font-size: 1.9rem;
+    color: #04312C;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+form input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #E6E6E6;
+    border-radius: 18px;
+    background: #E6E6E6;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    color: #676767;
+}
+
+form input::placeholder {
+    color: #676767;
+}
+
+.cadastroButton {
+    width: 100px;
+    padding: 0.8rem;
+    background-color: #136E43;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+}
+
+.cadastroButton:hover {
+    background: #459443;
+}
+
+.cadastroButton:active {
+    background: #7FBD42;
+    transition: background-color 0.2s ease;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.footer {
+    margin-top: 3rem;
+    text-align: left;
+    font-size: 0.9rem;
+    width: 90%;
+    position: absolute; 
+    bottom: 50px;
+    right: 20px;
+}
+
+.loginLink {
+    color: #459443;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.loginLink:hover {
+    color: #326931;
+    text-decoration: underline;
+}
+
+.LoginLink:active {
+    color: #2a5729;
+    text-decoration: underline;
+    transition: color 0.2s ease
+}
