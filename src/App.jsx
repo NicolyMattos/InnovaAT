@@ -1,8 +1,8 @@
 import React from 'react'
-
 import "./App.css"
+import styles from './App.module.css'
 
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { onAuthStateChanged } from "firebase/auth"
 
 // hooks
@@ -16,10 +16,11 @@ import FaleConosco from "./Pages/FaleConosco/FaleConosco"
 import Reviews from "./Pages/Reviews/Reviews"
 
 // components
-import NavBar from "./Components/Navbar"
+import NavBar from "./Components/NavBar"
 import Footer from "./Components/Footer"
 import CadastroModal from "./Components/CadastroModal"
 import LoginModal from "./Components/LoginModal"
+
 
 // context
 import { AuthProvider } from "./Context/AuthContext"
@@ -37,7 +38,7 @@ function App() {
   }, [auth])
 
   if (loadingUser) {
-    return <p>Carregando...</p>
+    return <p className={styles.carregando}>Carregando...</p>
   }
   return (
     <>

@@ -8,12 +8,12 @@
     align-items: center;
     box-sizing: border-box;
     margin: 0 auto;
-    position: static;
-    top: 1000px;
-    left: 0px;
     position: relative;
+  }
 
-  
+  .container{
+    align-items: center;
+    margin-left: 450px;
   }
 
   ul  {
@@ -25,6 +25,29 @@
 
   h1 {
     color: #C3F98F;
+    font-size: 1.9rem;
+  
+  }
+
+  p{
+    font-size: 1.5rem;    
+  }
+
+  .team{
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-left: 350px;
+  }
+
+  .teamLink{
+    text-decoration: none;
+    color: #7FBD42;
+  }
+
+  .teamLink:hover{
+    color: #94dd4b;
+    text-decoration: underline;
   }
   
   

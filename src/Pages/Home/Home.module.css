@@ -1,26 +1,23 @@
-.Home {
-
+.header {
   position: relative;
-  min-height: 100vh;
-  width: 100%;
-  padding-top: 120px; /* Ajuste conforme a altura da NavBar */
+  height: 50vh; /* Ajuste conforme necessário */
 }
 
 .CabecalhoBackground {
   background: url('/Degrade.svg') no-repeat top center;
-  background-size: 100% auto;
+  background-size: 100% auto; /* Isso fará a largura ser 100% e altura proporcional */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50vh;
-  z-index: 1; /* Define um z-index menor que o da NavBar */
+  height: 370px; /* Altura fixa que você pode ajustar */
+  z-index: 1;
 }
 
 .Drone {
   position: absolute;
   z-index: 2;
-  top: 3%;
+  top: 7%;
   right: 50%;
 }
 
@@ -28,22 +25,275 @@
   position: absolute;
   z-index: 2;
   max-width: 400px;
-  top: 8%;
+  top: 20%;
   right: 15%;
 }
 
-.explicacao {
+.homeContainer {
   position: relative;
-  top: 500px;
-  z-index: 2;
-  left: 300px;
+
 }
 
-.Podium {
+.mainContent {
   position: relative;
-  top: 700px;
-  z-index: 2;
-  left: 150px;
+  z-index: 3; /* Garante que o conteúdo fique acima do cabeçalho */
+  margin-top: -130px; /* Ajuste negativo para sobrepor se necessário */
+  padding-top: 70px; /* Espaço para o cabeçalho */
+  background: white; /* Fundo branco para o conteúdo */
+  border-radius: 30px 30px 0 0; /* Borda arredondada no topo */
+}
+
+/* Seção de Introdução */
+.introSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.introText {
+  flex: 1;
+  padding-right: 40px;
+  margin-left: 150px;
+}
+
+.mainTitle {
+  font-size: 2.6rem;
+  color: #04312C;
+  margin-bottom: 20px;
+}
+
+.introParagraph {
+  font-size: 1.4rem;
+  line-height: 2.2;
+  margin-bottom: 20px;
+  color: #459443;
+}
+
+.introPargraphSpan{
+  font-weight: bold;
+  color: #136E43;
+}
+
+.reviewLink {
+  font-size: 1.8rem;
+  color: #7FBD42;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  margin-left: 250px;
+}
+
+.reviewLink:hover {
+  color: #5d8a31;
+  text-decoration: underline;
+  transform: scale(10.50);
+}
+
+.introImage {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.elderlyManImage {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Seção do Pódio */
+.podiumSection {
+  margin: 100px;
+  margin-bottom: 600px; 
+}
+
+.podiumTitle {
+  font-size: 1.4rem;
+  color: #136E43;
+  text-align: center;
+  margin-bottom: -5px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  font-weight: normal;
+  text-decoration-color: #D9D9D9;
+}
+
+.starsDivider {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.smallStar {
+  color: #D9D9D9;
+  font-size: 0.8rem;
+  margin: 0 5px;
+}
+
+.mediumStar {
+  color: #D9D9D9;
+  font-size: 1.6rem;
+  margin: 0 5px;
+  position: relative;
+  top:9px;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 80px;
+  margin-top: 100px;
+}
+
+.podiumItem {
+  position: relative;
+}
+
+.podiumItem:hover {
+  transform: translateY(5px);
+}
+
+.firstPlace {
+  order: 2;
+  align-self: flex-start;
+  transform: translateY(-45px);
+}
+
+.cardWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cardBorderImage {
+  position: absolute;
+  top: -8%;
+  left: -5%;
+  width: 110%;
+  border-radius: 40px;
+  height: auto;
+  z-index: -1;
+  pointer-events: none;
+  transform: none;
+}
+
+.firstPlace:hover {
+  transform: translateY(-50px);
+}
+
+.secondPlace {
+  order: 1;
+  transform: translateY(35px);
+}
+
+.secondPlace:hover {
+  transform: translateY(30px);
+}
+
+.thirdPlace {
+  order: 3;
+  transform: translateY(70px);
+}
+
+.thirdPlace:hover {
+  transform: translateY(65px);
+}
+
+/* Seção Final */
+.finalSection {
+  background-color: #136E43;
+  color: white;
+  padding: 50px;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.finalTexture {
+  position: absolute;
+  top: 50px;
+  right: 60px;
+  z-index: 1; /* Coloca acima do fundo mas abaixo do conteúdo */
+}
+
+
+.finalText {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.finalImage {
+  flex: 1;
+  position: relative;
+}
+
+.tractorImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.finalTitle {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  color: #B2F470;
+}
+
+.finalParagraph {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  margin-right: 150px;
+  color: #7FDD7C;
+}
+
+.finalParagraphSpan{
+  font-weight: bold;
+}
+
+.finalLink {
+  font-size: 1.8rem;
+  color: #C3F98F;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.finalLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .introSection, .finalSection {
+    flex-direction: column;
+  }
+  
+  .introText, .finalText {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  
+  .podium {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .podiumItem {
+    margin-bottom: 30px !important;
+  }
+  
+  .secondPlace, .thirdPlace {
+    margin-bottom: 0 !important;
+  }
+  
+  .finalSection {
+    text-align: center;
+  }
 }
 
 

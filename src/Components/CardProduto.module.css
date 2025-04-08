@@ -1,0 +1,122 @@
+.cardContainer {
+    border-radius: 30px;
+    padding: 20px;
+    background: white;
+    transition: transform 0.3s ease;
+    width: 480px;
+    height: 220px;
+    position: relative;
+  }
+  
+  .cardContent {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+  }
+  
+  .imagemProduto {
+    width: 150px;
+    height: 150px;
+    margin-top: 35px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .infoProduto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 0;
+  }
+  
+  .nomeProduto {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+  }
+
+  .nomeProdutoReduzido1 {
+    font-size: 1.34rem;
+  }
+  
+  .nomeProdutoReduzido2 {
+    font-size: 1.27rem;
+  }
+  
+  .nomeProdutoReduzido3 {
+    font-size: 1.21rem;
+  }
+
+  .nomeProdutoReduzido4 {
+    font-size: 1.16rem;
+  }
+  
+  .nomeProdutoReduzido5 {
+    font-size: 1.11rem;
+  }
+  
+  .descricaoProduto {
+    font-size: 0.9rem;
+    color: #676767;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    flex-grow: 1;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3; /* Versão padrão recomendada */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: calc(0.9rem * 1.4 * 3); /* 2 linhas x altura da linha */
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+  
+  .avaliacao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .estrelas {
+margin-right: 10px;
+  }
+
+  .estrelas :hover {
+  cursor: default;
+  }
+  
+  .estrela {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+    margin-right: 0.25rem; /* espaço entre estrelas */
+    display: inline-block;
+  }
+  
+  .nota {
+    font-size: 0.8rem;
+    margin-top: 7px;
+    font-weight: bold;
+    color: #191919;
+  }
+  
+  .linkReviews {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #136E43;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-start;
+  }
+  
+  .linkReviews:hover {
+    text-decoration: underline;
+  }

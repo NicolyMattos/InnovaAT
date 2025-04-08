@@ -1,0 +1,6 @@
+.carregando{
+    display: grid;
+    place-items: center;
+    height: 300px;
+    font-size: 4rem;
+}
