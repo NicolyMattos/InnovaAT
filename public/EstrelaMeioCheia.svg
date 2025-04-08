@@ -1,0 +1,9 @@
+<svg viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="half-fill" x1="0" y1="0" x2="11" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="50%" stop-color="#F1C40F"/>
+      <stop offset="50%" stop-color="#BDC3C7"/>
+    </linearGradient>
+  </defs>
+  <path d="M2.424 10.204L3.708 6.388L0.612 4.312H4.404L5.76 0.22L7.14 4.312H10.908L7.812 6.388L9.12 10.204L5.76 7.768L2.424 10.204Z" fill="url(#half-fill)"/>
+</svg>

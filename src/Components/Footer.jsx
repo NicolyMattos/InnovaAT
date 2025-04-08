@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styles from './Footer.module.css'
 
 const Footer = () => {
@@ -23,6 +24,7 @@ const Footer = () => {
           <h1>Departamentos</h1><p>XX XXXXX-XXX</p><p>XX XXXXX-XXX</p>
           </li>
         </ul>
+          <p className={styles.team}>Desenvolvido por <Link to="/SobreNos" className={styles.teamLink}>Innova Agro Team</Link></p>
       </div>
     </footer>
     </>
